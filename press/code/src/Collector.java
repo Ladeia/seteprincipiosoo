@@ -10,7 +10,7 @@ public class Collector {
 		parse(tweets);
 	}
 
-	private static TwitterFeeder createFeeder() {
+	private static SocialNetworkFeeder createFeeder() {
 		return new TwitterFeeder();
 	}
 
