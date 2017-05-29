@@ -1,16 +1,16 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class Collector {
 	
 	public static void main(String[] args) {
 	
 		TwitterFeeder twitter = new TwitterFeeder();
-		ArrayList<Tweets> tweets = twitter.getAllTweets();
+		List<Tweets> tweets = twitter.getAllTweets();
 		
 		parse(tweets);
 	}
 
-	private static void parse(ArrayList<Tweets> tweets) {
+	private static void parse(List<Tweets> tweets) {
 		
 		// Process tweets
 	}

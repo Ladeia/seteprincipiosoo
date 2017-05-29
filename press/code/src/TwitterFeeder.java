@@ -1,8 +1,8 @@
-import java.util.ArrayList;
+import java.util.List;
 
 public class TwitterFeeder {
 
-	public ArrayList<Tweets> getAllTweets() {
+	public List<Tweets> getAllTweets() {
 		return null;
 	}
 
