@@ -4,8 +4,8 @@ public class Collector {
 	
 	public static void main(String[] args) {
 	
-		SocialNetworkFeeder twitter = createFeeder();
-		List<Interaction> tweets = twitter.getAllInteractions();
+		SocialNetworkFeeder feeder = createFeeder();
+		List<Interaction> tweets = feeder.getAllInteractions();
 		
 		parse(tweets);
 	}
