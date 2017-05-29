@@ -172,6 +172,54 @@ public class Collector {
 }
 						</pre>
 					</section>
+					<section>
+						<h3>Código melhorado v1</h3>
+						<pre>
+import java.util.List;
+
+public class Collector {
+
+	public static void main(String[] args) {
+
+		SocialNetworkFeeder twitter = new TwitterFeeder();
+		List<Interaction> tweets = twitter.getAllInteractions();
+
+		parse(tweets);
+	}
+
+	private static void parse(List<Interaction> tweets) {
+
+		// Process tweets
+	}
+}
+						</pre>
+					</section>
+					<section>
+						<h3>Código melhorado v2</h3>
+						<pre>
+import java.util.List;
+
+public class Collector {
+
+	public static void main(String[] args) {
+
+		SocialNetworkFeeder twitter = createFeeder();
+		List<Interaction> tweets = twitter.getAllInteractions();
+
+		parse(tweets);
+	}
+
+	private static SocialNetworkFeeder createFeeder() {
+		return new TwitterFeeder();
+	}
+
+	private static void parse(List<Interaction> tweets) {
+
+		// Process tweets
+	}
+}
+						</pre>
+					</section>
 				</section>
 				<section>
 					<section>
