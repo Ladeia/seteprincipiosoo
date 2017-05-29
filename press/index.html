@@ -141,13 +141,63 @@
 						<li>One Rule, One Place</li>
 					</ul>
 				</section>
-				<section><h1>Encontre o que varia e o encapsule</h1></section>
-				<section><h1>Programe pensando em interfaces</h1></section>
-				<section><h1>Prefira agregação a herança</h1></section>
-				<section><h1>Princípio do Aberto-Fechado</h1></section>
-				<section><h1>Princípio da Substituição de Bárbara Liskov</h1></section>
-				<section><h1>Peça por ajuda, não por informação</h1></section>
-				<section><h1>One Rule, One Place</h1></section>
+				<section>
+					<section>
+						<h3>Encontre o que varia e o encapsule</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Programe pensando em interfaces</h3>
+					</section>
+					<section>
+						<h3>Código com bad smells</h3>
+						<pre>
+import java.util.ArrayList;
+
+public class Collector {
+
+	public static void main(String[] args) {
+
+		TwitterFeeder twitter = new TwitterFeeder();
+		ArrayList<Tweets> tweets = twitter.getAllTweets();
+
+		parse(tweets);
+	}
+
+	private static void parse(ArrayList<Tweets> tweets) {
+
+		// Process tweets
+	}
+}
+						</pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Prefira agregação a herança</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Princípio do Aberto-Fechado</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Princípio da Substituição de Bárbara Liskov</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Peça por ajuda, não por informação</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>One Rule, One Place</h3>
+					</section>
+				</section>
 				<section><h1>Perguntas?</h1></section>
 			</div>
 		</div>
